@@ -9,7 +9,7 @@ function App() {
       {/* Header */}
       <header className="bg-green-600 text-white py-6 px-4 shadow-md">
         <div className="max-w-2xl mx-auto text-center">
-          <h1 className="text-3xl font-bold tracking-tight">Ajuda de Internet</h1>
+          <h1 className="text-3xl font-bold tracking-tight">NIO</h1>
           <p className="mt-2 text-green-100 text-lg">Estamos prontos para atender você</p>
         </div>
       </header>
