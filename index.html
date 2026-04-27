@@ -1,89 +1,182 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GIGA+</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GIGA+</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #0b1f3a; /* azul escuro */
-            color: white;
-        }
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #0b1f3a;
+        color: white;
+        scroll-behavior: smooth;
+    }
 
-        header {
-            text-align: center;
-            padding: 30px 20px;
-        }
+    header {
+        text-align: center;
+        padding: 40px 20px;
+        animation: fadeDown 1s ease;
+    }
 
-        h1 {
-            font-size: 48px;
-            margin: 0;
-        }
+    h1 {
+        font-size: 52px;
+        margin: 0;
+    }
 
-        .plus {
-            color: #7CFC00; /* verde claro */
-        }
+    .plus {
+        color: #7CFC00;
+    }
 
-        .container {
-            text-align: center;
-            padding: 40px 20px;
-        }
+    .container {
+        text-align: center;
+        padding: 50px 20px;
+        animation: fadeUp 1.2s ease;
+    }
 
-        .container p {
-            font-size: 18px;
-            max-width: 600px;
-            margin: 0 auto 30px;
-            line-height: 1.6;
-        }
+    .container p {
+        font-size: 18px;
+        max-width: 700px;
+        margin: 0 auto 30px;
+        line-height: 1.6;
+    }
 
-        .btn {
-            display: inline-block;
-            padding: 15px 30px;
-            margin: 10px;
-            background-color: #7CFC00;
-            color: #0b1f3a;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 8px;
-            transition: 0.3s;
-        }
+    .btn {
+        display: inline-block;
+        padding: 15px 30px;
+        margin: 10px;
+        background-color: #7CFC00;
+        color: #0b1f3a;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 8px;
+        transition: 0.3s;
+    }
 
-        .btn:hover {
-            background-color: #6be000;
-        }
+    .btn:hover {
+        background-color: #6be000;
+        transform: scale(1.05);
+    }
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            font-size: 14px;
-            opacity: 0.8;
+    .features {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 40px 20px;
+        gap: 20px;
+    }
+
+    .feature-box {
+        background-color: #132b4f;
+        padding: 20px;
+        border-radius: 10px;
+        width: 250px;
+        animation: fadeUp 1s ease;
+    }
+
+    .testimonials {
+        padding: 50px 20px;
+        background-color: #132b4f;
+        text-align: center;
+    }
+
+    .testimonial {
+        max-width: 600px;
+        margin: 20px auto;
+        font-style: italic;
+        animation: fadeUp 1.5s ease;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+        opacity: 0.8;
+    }
+
+    @keyframes fadeUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
         }
-    </style>
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeDown {
+        from {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+</style>
 </head>
 
 <body>
 
-    <header>
-        <h1>GIGA<span class="plus">+</span></h1>
-    </header>
+<header>
+    <h1>GIGA<span class="plus">+</span></h1>
+</header>
 
-    <div class="container">
-        <p>
-            A GIGA+ oferece internet de alta velocidade com estabilidade e qualidade para sua casa ou empresa.
-            Navegue, jogue e assista sem interrupções com a melhor conexão da região.
-        </p>
+<div class="container">
+    <p>
+        Internet rápida, estável e confiável para sua casa ou empresa. 
+        Com a GIGA+, você tem conexão de alta qualidade para navegar, jogar e assistir sem travamentos.
+    </p>
 
-        <a class="btn" href="https://wa.me/5511969520672" target="_blank">Contratar Agora</a>
-        <a class="btn" href="https://wa.me/5511969520672" target="_blank">Planos</a>
-        <a class="btn" href="https://wa.me/5511969520672" target="_blank">Fale Conosco</a>
+    <a class="btn" href="https://wa.me/5511969520672" target="_blank">Contratar Agora</a>
+    <a class="btn" href="https://wa.me/5511969520672" target="_blank">Fale Conosco</a>
+</div>
+
+<section class="features">
+    <div class="feature-box">
+        <h3>Alta Velocidade</h3>
+        <p>Conexão rápida para todas as suas atividades online.</p>
     </div>
 
-    <footer>
-        © 2026 GIGA+ - Todos os direitos reservados
-    </footer>
+    <div class="feature-box">
+        <h3>Estabilidade</h3>
+        <p>Internet sem quedas para garantir sua produtividade.</p>
+    </div>
+
+    <div class="feature-box">
+        <h3>Suporte Rápido</h3>
+        <p>Atendimento ágil direto pelo WhatsApp.</p>
+    </div>
+</section>
+
+<section class="testimonials">
+    <h2>O que nossos clientes dizem</h2>
+
+    <div class="testimonial">
+        "A melhor internet que já usei! Nunca mais tive problemas de conexão."
+        <br>– Cliente satisfeito
+    </div>
+
+    <div class="testimonial">
+        "Excelente atendimento e velocidade incrível. Recomendo muito!"
+        <br>– João Silva
+    </div>
+
+    <div class="testimonial">
+        "Uso para trabalho e jogos, funciona perfeitamente."
+        <br>– Maria Souza
+    </div>
+
+    <a class="btn" href="https://wa.me/5511969520672" target="_blank">Fale Conosco</a>
+</section>
+
+<footer>
+    © 2026 GIGA+ - Todos os direitos reservados
+</footer>
 
 </body>
 </html>
